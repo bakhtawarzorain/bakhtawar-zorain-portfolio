@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="100%" height="100%">
+  <defs>
+    <!-- Gradients & Shadows -->
+    <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a1d37" />
+      <stop offset="50%" stop-color="#102e56" />
+      <stop offset="100%" stop-color="#0a1d37" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6D365" />
+      <stop offset="50%" stop-color="#FDA085" />
+      <stop offset="100%" stop-color="#F6D365" />
+    </linearGradient>
+    <filter id="medalShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="850" fill="#FFFFFF" />
+  
+  <!-- Outer Slate Frame -->
+  <rect x="25" y="25" width="1150" height="800" fill="none" stroke="#D1D5DB" stroke-width="2" />
+  <rect x="45" y="45" width="1110" height="760" fill="#FCFCFA" stroke="#E5E7EB" stroke-width="1.5" />
+
+  <!-- Top Left Geometric Brand Chevrons -->
+  <path d="M 25 25 L 230 25 L 180 75 L 25 75 Z" fill="#0E2D53" />
+  <path d="M 230 25 L 430 25 L 470 50 L 250 50 Z" fill="#F59E0B" />
+  <path d="M 25 75 L 25 250 L 50 200 L 50 75 Z" fill="#0284C7" />
+  <path d="M 25 250 L 25 380 L 50 340 L 50 250 Z" fill="#0284C7" opacity="0.8" />
+  <path d="M 25 380 L 25 500 L 50 460 L 50 380 Z" fill="#F59E0B" opacity="0.9" />
+
+  <!-- Corner Gold Accents -->
+  <path d="M 45 65 L 65 45 L 85 45 L 45 85 Z" fill="#D97706" />
+  <path d="M 1155 65 L 1135 45 L 1115 45 L 1155 85 Z" fill="#D97706" />
+  <path d="M 45 785 L 65 805 L 85 805 L 45 765 Z" fill="#D97706" />
+  <path d="M 1155 785 L 1135 805 L 1115 805 L 1155 765 Z" fill="#D97706" />
+
+  <!-- Right Navy Ribbon -->
+  <rect x="870" y="25" width="200" height="660" fill="url(#ribbonGrad)" />
+  <line x1="885" y1="25" x2="885" y2="685" stroke="#F59E0B" stroke-width="2.5" opacity="0.85" />
+  <line x1="1055" y1="25" x2="1055" y2="685" stroke="#F59E0B" stroke-width="2.5" opacity="0.85" />
+
+  <!-- Circular Gold & Navy Seal Medal on Ribbon -->
+  <g transform="translate(970, 680)" filter="url(#medalShadow)">
+    <!-- Sunburst outer teeth -->
+    <circle cx="0" cy="0" r="105" fill="#F59E0B" />
+    <circle cx="0" cy="0" r="92" fill="#0E2D53" />
+    <circle cx="0" cy="0" r="82" fill="#FFFFFF" />
+    <circle cx="0" cy="0" r="76" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+    <!-- Medal Logo Motif -->
+    <rect x="-18" y="-38" width="8" height="76" rx="4" fill="#0284C7" />
+    <rect x="10" y="-38" width="8" height="76" rx="4" fill="#0284C7" />
+    <rect x="-4" y="-12" width="8" height="48" rx="4" fill="#F59E0B" />
+  </g>
+
+  <!-- Watermark Stamp: VERIFIED with Stars -->
+  <g transform="translate(520, 690) rotate(-12)" opacity="0.22">
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#0D9488" stroke-width="4.5" stroke-dasharray="8 6" />
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#0D9488" stroke-width="2" />
+    <text x="0" y="10" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="34" font-weight="900" fill="#0D9488" text-anchor="middle" letter-spacing="4">VERIFIED</text>
+    <polygon points="0,-45 8,-28 26,-28 12,-17 17,0 0,-10 -17,0 -12,-17 -26,-28 -8,-28" fill="#0D9488" />
+    <polygon points="-50,-35 -44,-22 -30,-22 -41,-13 -37,0 -50,-8 -63,0 -59,-13 -70,-22 -56,-22" fill="#0D9488" />
+    <polygon points="50,-35 56,-22 70,-22 59,-13 63,0 50,-8 37,0 41,-13 30,-22 44,-22" fill="#0D9488" />
+  </g>
+
+  <!-- Content Left Margin: 115px -->
+
+  <!-- simplilearn | SkillUp Logo -->
+  <g transform="translate(115, 120)">
+    <text x="0" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="38" font-weight="700" fill="#F59E0B">simpli<tspan fill="#0284C7">learn</tspan></text>
+    <line x1="205" y1="-2" x2="205" y2="34" stroke="#94A3B8" stroke-width="2" />
+    <text x="220" y="24" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="38" font-weight="800" fill="#0284C7">Skill<tspan fill="#F59E0B">Up</tspan></text>
+  </g>
+
+  <!-- CERTIFICATE OF COMPLETION Heading -->
+  <text x="115" y="215" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="28" font-weight="600" fill="#64748B" letter-spacing="3">CERTIFICATE OF</text>
+  <text x="115" y="285" font-family="'Instrument Serif', Georgia, serif" font-size="64" font-weight="400" fill="#2C3E50" letter-spacing="2">COMPLETION</text>
+
+  <!-- Recipient Name -->
+  <text x="115" y="415" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="44" font-weight="600" fill="#111827">Bakhtawar Zorain</text>
+  <line x1="115" y1="432" x2="740" y2="432" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Course description -->
+  <text x="115" y="480" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="400" fill="#4B5563">has successfully completed the online course:</text>
+  <text x="115" y="520" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="27" font-weight="700" fill="#111827">Introduction to Artificial Intelligence</text>
+
+  <!-- Commendation note -->
+  <text x="115" y="580" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="400" fill="#4B5563">This professional has demonstrated initiative and a commitment to</text>
+  <text x="115" y="610" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="400" fill="#4B5563">deepening their skills and advancing their career. Well done!</text>
+
+  <!-- Date & Certificate Code -->
+  <text x="115" y="715" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="19" font-weight="500" fill="#374151">3rd October 2026</text>
+  <text x="115" y="748" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="19" font-weight="500" fill="#374151">Certificate code : <tspan font-weight="600">10828449</tspan></text>
+
+  <!-- Signature Section -->
+  <g transform="translate(680, 620)">
+    <!-- Elegant signature path -->
+    <path d="M 25 45 Q 40 10, 50 35 T 60 55 Q 75 10, 85 40 T 95 60 Q 110 15, 125 45" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 35 25 Q 70 -5, 110 30" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round" />
+    <text x="65" y="90" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="500" fill="#374151" text-anchor="middle">Krishna Kumar</text>
+    <text x="65" y="118" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="17" font-weight="500" fill="#6B7280" text-anchor="middle">CEO, Simplilearn</text>
+  </g>
+</svg>
